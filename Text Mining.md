@@ -8,7 +8,7 @@ Tokentype is word by default, but could be characters, n-grams, sentences, lines
 to_lower=TRUE is by default
 The output would be one word in one row with original id keeps the same.
 ## 2.anti_join()
-` data(stopwords)
+` data(stopwords)\
  anti_join(the output of unnest_tokens)`         
 remove stop words such as "the", "of", "a/an"......
 
