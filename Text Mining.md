@@ -1,9 +1,9 @@
 # A. "tokenizer" package
-## 1. the text can be truncated into paragraph, sentence, word and single character. 
+## 1. The text can be truncated into paragraph, sentence, word and single character. 
 ## 2. The output would be list.
 # B. "tidytext"
 ## 1. unnest_tokens(tokentype,colname of interest)
 ### The df should be converted into tibble using dplyr::tibble(df) and only keep the id and column of interests.
-### tokentype is word by default, but could be characters, n-grams, sentences, lines, paragraphs, or separation around a regex pattern
+### Tokentype is word by default, but could be characters, n-grams, sentences, lines, paragraphs, or separation around a regex pattern
 ### to_lower=TRUE is by default
 ### The output would be one word in one row with original id keeps the same.
