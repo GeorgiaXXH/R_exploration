@@ -10,6 +10,9 @@ The output would be one word in one row with original id keeps the same.
 ## 2.anti_join()
 ` data(stopwords)`
 
-`anti_join(the output of unnest_tokens)`         
-remove stop words such as "the", "of", "a/an"......
-# C.
+`Stopwords=stopwords; Stopswords$word=Hsmic::capitalize(stopwords$word)`
+
+`the output of unnest_tokens %>% anti_join(stopwords)%>%anti_join(Stopwords)`         
+remove stop words such as "the", "of", "a/an"......and the A, The version of them.
+# C."fuzzyjoin"
+## 1.stringdist_join(df1,df2,mode="left/inner..",by="colname",max.dist=0.1,)
