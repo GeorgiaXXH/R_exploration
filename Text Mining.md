@@ -15,3 +15,6 @@ The output would be one word in one row with original id keeps the same.
 remove stop words such as "the", "of", "a/an"......and the A, The version of them.
 # C."fuzzyjoin"
 ## 1.stringdist_join(df1,df2,mode="left/inner..",by="colname",max.dist=0.1,)
+# Little tricks:
+## 1. slice_max(order_by=``,n=1) keep the max records within each group
+## 2. group_by() %>% summarise(``=toString(``)) realize group_concat in sql in R
