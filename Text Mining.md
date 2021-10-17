@@ -21,3 +21,5 @@ remove stop words such as "the", "of", "a/an"......and the A, The version of the
 ## 2. realize group_concat in sql in R
         group_by() %>% summarise(``=toString(``))
 ## 3. capitalize：Hsmic::capitalize
+## 4. stringr::str_to_title() 
+To capitalize every word in the sentence
