@@ -23,5 +23,8 @@ remove stop words such as "the", "of", "a/an"......and the A, The version of the
 ## 3. capitalize：Hsmic::capitalize
 ## 4. stringr::str_to_title() 
 To capitalize every word in the sentence
-## 5. remove parenthesis and context within 
+## 5. remove patterns using regular expression
+### 1) parenthesis and context within 
     gsub("\\s*\\([^\\)]+\\)","",string)
+### 2) ,and content behind
+    gsub(",[:alpha:]*","",string)
